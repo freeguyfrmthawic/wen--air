@@ -1,69 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Claim your free WEN tokens now!">
-    <meta name="keywords" content="WEN, cryptocurrency, airdrop, free tokens">
-    <meta name="author" content="WenOnBase Crypto Group">
-    <title>WEN Token - Claim Your Free Tokens</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WEN Token - Claim Your Free Tokens</title>
+<style>
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Arial', sans-serif;
+}
+
+body {
+background-color: #e8f4fc;
+color: #222;
+text-align: center;
+overflow-x: hidden;
+position: relative;
+}
+
+/* Floating Shapes */
+.floating-shape {
+position: absolute;
+width: 40px;
+height: 40px;
+background: rgba(0, 123, 255, 0.3);
+border-radius: 50%;
+animation: float 5s infinite alternate ease-in-out;
+}
+
+.floating-shape:nth-child(1) { top: 10%; left: 5%; animation-duration: 6s; }
+.floating-shape:nth-child(2) { top: 50%; right: 10%; animation-duration: 4s; }
+
+@keyframes float {
+from { transform: translateY(0px); }
+to { transform: translateY(-20px); }
+}
+
+/* Header */
+.header {
+background: #007bff;
+padding: 15px;
+position: relative;
+overflow: hidden;
+}
+
+.header img {
+width: 120px;
+display: block;
+margin: 0 auto;
+border-radius: 10px;
+}
+
+/* Buttons */
+.social-buttons {
+margin-top: 10px;
+}
+
+.social-buttons a {
+display: inline-block;
+padding: 10px 15px;
+margin: 5px;
+color: white;
+background: #0056b3;
+text-decoration: none;
+border-radius: 5px;
+font-weight: bold;
+transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.social-buttons a:hover {
+background: #ff4500;
+transform: scale(1.05);
+}
+
+.join-airdrop {
+display: block;
+width: 200px;
+margin: 15px auto;
+padding: 12px;
+font-size: 18px;
+background: #ff4500;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-weight: bold;
+transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.join-airdrop:hover {
+background: #e63e00;
+transform: scale(1.05);
+}
+
+/* Moving text animation */
+@keyframes moveText {
+from { transform: translateX(100%); }
+to { transform: translateX(-100%); }
+}
+
+.scrolling-text {
+white-space: nowrap;
+animation: moveText 10s linear infinite;
+color: white;
+font-weight: bold;
+padding: 10px;
+}
+
+/* Sections */
+.section {
+padding: 40px 20px;
+background: white;
+margin: 20px auto;
+max-width: 800px;
+border-radius: 10px;
+box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+opacity: 0;
+transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.section img {
+width: 80%;
+max-width: 300px;
+border-radius: 10px;
+margin: 15px auto;
+display: block;
+}
+
+/* Colored Bar */
+.visual-bar {
+width: 80%;
+height: 5px;
+background: #007bff;
+margin: 20px auto;
+border-radius: 5px;
+}
+
+/* Footer */
+.footer {
+padding: 20px;
+background: #007bff;
+color: white;
+margin-top: 30px;
+}
+</style>
 </head>
 <body>
-    <!-- Floating Shapes -->
-    <div class="floating-shape"></div>
-    <div class="floating-shape"></div>
 
-    <!-- Header with new logo -->
-    <header class="header container">
-        <img src="https://i.ibb.co/5WHg0qR3/IMG-6789.jpg" alt="WEN Logo" class="img-fluid mx-auto d-block">
-        <div class="social-buttons">
-            <a href="https://t.me/WenOnBase" aria-label="Telegram" class="btn btn-primary">Telegram</a>
-            <a href="https://x.com/Wenwencoin" aria-label="Twitter" class="btn btn-primary">Twitter</a>
-        </div>
-        <button class="join-airdrop btn btn-warning" onclick="window.location.href='https://t.me/WenDropBot'">🚀 Join Airdrop</button>
-        <div class="scrolling-text">🚀 WEN IS NOW ON BASE! CLAIM YOUR FREE TOKENS! 🚀</div>
-    </header>
+<!-- Floating Shapes -->
+<div class="floating-shape"></div>
+<div class="floating-shape"></div>
 
-    <!-- Sections -->
-    <main class="container">
-        <section class="section">
-            <h2>The Rise of WEN</h2>
-            <p>WEN started as a meme cryptocurrency but quickly became a viral phenomenon. Unlike most meme coins that depend on hype alone, WEN had a unique strategy—directly airdropping tokens to [...]</p>
-            <img src="https://i.ibb.co/MxDPLkf1/IMG-6696.jpg" alt="WEN Community Growth" class="img-fluid mx-auto d-block">
-        </section>
-        <div class="visual-bar"></div>
-        <section class="section">
-            <h2>The Airdrop Strategy</h2>
-            <p>One of WEN’s strongest features is its fair distribution. Over 1.5 million wallets will receive free WEN tokens. Unlike projects that reward only early adopters, WEN ensures that ever[...]</p>
-            <img src="https://i.ibb.co/6RWfH3wb/IMG-6688.jpg" alt="WEN Airdrop" class="img-fluid mx-auto d-block">
-        </section>
-        <div class="visual-bar"></div>
-        <section class="section">
-            <h2>Tokenomics: A Sustainable Model</h2>
-            <p>WEN's strong tokenomics ensures stability and long-term value. Unlike traditional meme coins with unpredictable supply, WEN follows a structured distribution model:</p>
-            <ul>
-                <li>50% of the total supply (250M WEN) is locked for stability</li>
-                <li>The remaining 250M WEN is allocated for airdrops, liquidity, team commitment, marketing, and future development</li>
-            </ul>
-            <img src="https://i.ibb.co/PZpBRZCK/IMG-6795.jpg" alt="WEN Tokenomics" class="img-fluid mx-auto d-block">
-        </section>
-        <div class="visual-bar"></div>
-        <section class="section">
-            <h2>Exchange Listing: The Next Big Step</h2>
-            <p>WEN isn’t just another airdrop token—it’s a project with real momentum. A major exchange listing is on the horizon, allowing WEN holders to trade freely. This listing will drive i[...]</p>
-            <img src="https://i.ibb.co/Wvm73xML/IMG-6693.jpg" alt="WEN Exchange" class="img-fluid mx-auto d-block">
-        </section>
-    </main>
+<!-- Header with new logo -->
+<div class="header">
+<img src="https://i.ibb.co/5WHg0qR3/IMG-6789.jpg" alt="WEN Logo">
+<div class="social-buttons">
+<a href="https://t.me/WenOnBase">Telegram</a>
+<a href="https://x.com/Wenwencoin">Twitter</a>
+</div>
+<button class="join-airdrop" onclick="window.location.href='https://t.me/WenDropBot'">🚀 Join Airdrop</button>
+<div class="scrolling-text">🚀 WEN IS NOW ON BASE! CLAIM YOUR FREE TOKENS! 🚀</div>
+</div>
 
-    <footer class="footer container">
-        ©️ @WenOnBase Crypto Group (2025) - WEN IS HERE TO STAY! 🐱
-    </footer>
+<!-- Sections -->
+<div class="section">
+<h2>The Rise of WEN</h2>
+<p><B><WEN started as a meme cryptocurrency but quickly became a viral phenomenon. Unlike most meme coins that depend on hype alone, WEN had a unique strategy—directly airdropping tokens to over one million wallets. This approach created an instantly engaged community, driving demand and making WEN one of the most discussed tokens in the space.</B></p>
+<img src="https://i.ibb.co/MxDPLkf1/IMG-6696.jpg" alt="WEN Community Growth">
+</div>
 
-    <script src="scripts.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<div class="visual-bar"></div>
+
+<div class="section">
+<h2>The Airdrop Strategy</h2>
+<p><B>One of WEN’s strongest features is its fair distribution. Over 1.5 million wallets will receive free WEN tokens. Unlike projects that reward only early adopters, WEN ensures that every community member has a fair chance to earn. The referral system allows users to grow their rewards, and instant withdrawals eliminate unnecessary waiting.</B></p>
+<img src="https://i.ibb.co/6RWfH3wb/IMG-6688.jpg" alt="WEN Airdrop">
+</div>
+
+<div class="visual-bar"></div>
+
+<div class="section">
+<h2>Tokenomics: A Sustainable Model</h2>
+<p><B>WEN's strong tokenomics ensures stability and long-term value. Unlike traditional meme coins with unpredictable supply, WEN follows a structured distribution model:</B></p>
+<p>50% of the total supply (250M WEN) is <B>locked for stability</B>, while the remaining 250M WEN is allocated for airdrops, liquidity, team commitment, marketing, and future development.</p>
+<img src="https://i.ibb.co/PZpBRZCK/IMG-6795.jpg" alt="WEN Tokenomics">
+</div>
+
+<div class="visual-bar"></div>
+
+<div class="section">
+<h2>Exchange Listing: The Next Big Step</h2>
+<p><B>WEN isn’t just another airdrop token—it’s a project with real momentum. A major exchange listing is on the horizon, allowing WEN holders to trade freely. This listing will drive increased liquidity, attract new investors, and cement WEN’s place as a leading meme token in the market.</B></p>
+<img src="https://i.ibb.co/Wvm73xML/IMG-6693.jpg" alt="WEN Exchange">
+</div>
+
+<div class="footer">
+    ©️ @WenOnBase Crypto Group (2025) - WEN IS HERE TO STAY! 🐱
+</div>
+
+<script>
+// Scroll Fade-in & Fade-out Effect
+document.addEventListener("scroll", function() {
+let sections = document.querySelectorAll(".section");
+let windowHeight = window.innerHeight;
+
+sections.forEach(section => {
+let position = section.getBoundingClientRect().top;
+let fadeOutPosition = section.getBoundingClientRect().bottom;
+
+if (position < windowHeight - 50) {
+section.style.opacity = "1";
+} else {
+section.style.opacity = "0";
+}
+});
+});
+</script>
+
 </body>
 </html>
