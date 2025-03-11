@@ -20,7 +20,7 @@
 
         body {
             background: linear-gradient(135deg, #0a192f, #1f4068);
-            color: white;
+            color: #f0f0f0;
             text-align: center;
             overflow-x: hidden;
         }
@@ -69,7 +69,7 @@
         }
 
         /* Buttons */
-        .social-buttons a, .join-airdrop {
+        .social-buttons a, .join-airdrop, .add-wallet {
             display: inline-block;
             margin: 10px;
             padding: 12px 20px;
@@ -94,6 +94,13 @@
         }
         .join-airdrop:hover {
             background: linear-gradient(135deg, #ff6a00, #ff4500);
+            transform: scale(1.1);
+        }
+        .add-wallet {
+            background: linear-gradient(135deg, #28a745, #218838);
+        }
+        .add-wallet:hover {
+            background: linear-gradient(135deg, #218838, #28a745);
             transform: scale(1.1);
         }
 
@@ -133,6 +140,14 @@
         }
         .footer:hover {
             transform: scale(1.02);
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
         }
 
         /* FAQ Section */
@@ -174,7 +189,7 @@
         <a href="#rise">The Rise</a>
         <a href="#airdrop">Airdrop</a>
         <a href="#tokenomics">Tokenomics</a>
-        <a href="#exchange">Exchange</a>
+        <a href="#add-wallet">Add to Wallet</a>
         <a href="#faq">FAQ</a>
     </div>
     <div class="social-buttons">
@@ -192,18 +207,25 @@
 </div>
 <div class="section" id="airdrop">
     <h2>The Airdrop Strategy</h2>
-    <p ><b>One of WEN’s strongest features is its fair distribution...</b></p>
+    <p><b>One of WEN’s strongest features is its fair distribution...</b></p>
     <img src="https://i.ibb.co/6RWfH3wb/IMG-6688.jpg" alt="WEN Airdrop">
 </div>
 <div class="section" id="tokenomics">
-    <h2>Tokenomics: A Sustainable Model</h2>
-    <p><b>WEN's strong tokenomics ensures stability and long-term value...</b></p>
+    <h2>📢 WEN Tokenomics Update</h2>
+    <p>🔒 50% of supply (250M WEN) is locked, reducing circulation and strengthening stability.</p>
+    <p>💰 From the 250M WEN in circulation:</p>
+    <p>65% (162.5M WEN) for airdrops & rewards – distributed to 1.5M+ wallets!</p>
+    <p>15% for liquidity & listings</p>
+    <p>10% for team (locked)</p>
+    <p>5% for marketing</p>
+    <p>5% for future development</p>
+    <p>🚀 DEXes listing is coming soon!</p>
     <img src="https://i.ibb.co/PZpBRZCK/IMG-6795.jpg" alt="WEN Tokenomics">
 </div>
-<div class="section" id="exchange">
-    <h2>Exchange Listing: The Next Big Step</h2>
-    <p><b>WEN isn’t just another airdrop token—it’s a project with real momentum...</b></p>
-    <img src="https://i.ibb.co/Wvm73xML/IMG-6693.jpg" alt="WEN Exchange">
+<div class="section" id="add-wallet">
+    <h2>Add WEN Token to Your Wallet</h2>
+    <p>WEN Token is available on Base. Follow the instructions in the video below to add it to your wallet:</p>
+    <button class="add-wallet" onclick="window.open('https://t.me/WenBase_Chat/6928', '_blank')">📹 Watch Video</button>
 </div>
 
 <!-- FAQ Section -->
@@ -230,7 +252,14 @@
 </div>
 
 <!-- Footer -->
-<div class="footer"> ©️ @WenOnBase Crypto Group (2025) - WEN IS HERE TO STAY! 🐱 </div>
+<div class="footer">
+    <p>Contract Address: <a href="https://etherscan.io/address/0xecad29646Bbeeb8Bfdc3619744Bf8a8E946Af95" target="_blank">0xecad29646Bbeeb8Bfdc3619744Bf8a8E946Af95</a></p>
+    <p>Follow us on social media:</p>
+    <a href="#">Twitter</a>
+    <a href="#">Telegram</a>
+    <a href="#">Discord</a>
+    <p>&copy; 2023 WEN Token. All rights reserved.</p>
+</div>
 
 <script>
 window.addEventListener("scroll", function() {
