@@ -44,6 +44,7 @@
             width: 150px;
             border-radius: 15px;
             transition: transform 0.3s ease-in-out;
+            animation: bounce 1s infinite alternate;
         }
         .header img:hover {
             transform: rotate(5deg);
@@ -79,6 +80,7 @@
             text-decoration: none;
             border-radius: 10px;
             transition: all 0.3s ease;
+            animation: move 1s ease-in-out infinite alternate;
         }
         .social-buttons a {
             background: linear-gradient(135deg, #007bff, #00c6ff);
@@ -123,6 +125,7 @@
             border-radius: 10px;
             margin-top: 15px;
             transition: transform 0.3s ease-in-out;
+            animation: move 1s ease-in-out infinite alternate;
         }
         .section img:hover {
             transform: scale(1.05);
@@ -178,6 +181,16 @@
             background: rgba(255, 255, 255, 0.2);
             border-radius: 10px;
         }
+
+        /* Keyframe Animations */
+        @keyframes move {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-5px); }
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
     </style>
 </head>
 <body>
@@ -188,7 +201,7 @@
     <div class="navbar">
         <a href="#airdrop">Airdrop</a>
         <a href="#tokenomics">Tokenomics</a>
-        <a href="#add-wallet">Wallet</a>
+        <a href="#add-wallet">Add to Wallet</a>
     </div>
     <div class="social-buttons">
         <a href="https://t.me/WenOnBase"><i class="fab fa-telegram-plane"></i> Telegram</a>
@@ -250,10 +263,10 @@
 
 <!-- Footer -->
 <div class="footer">
-    <p>Contract Address: <code></code>0xecad29646Bbeeb8Bfdc3619744Bf8a8E946Af95</code></p>
+    <p>Contract Address: <a href="https://etherscan.io/address/0xecad29646Bbeeb8Bfdc3619744Bf8a8E946Af95" target="_blank">0xecad29646Bbeeb8Bfdc3619744Bf8a8E946Af95</a></p>
     <p>Follow us on social media:</p>
     <a href="https://x.com/wenwencoin">Twitter</a>
-    <a href="https://t.me/WenOnBASE">Telegram</a>
+    <a href="https://t.me/wenonbase">Telegram</a>
     <p>&copy; 2023 WEN Token. All rights reserved.</p>
 </div>
 
